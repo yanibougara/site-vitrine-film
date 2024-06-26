@@ -1,0 +1,153 @@
+
+@font-face {
+    font-family:"HighVoltage Heavy Rough";
+    src: url("/font/HighVoltageHeavyRough.ttf") format("truetype")
+    }
+
+body{
+    background-image:url("affiche/fond.png");
+opacity: 90%;
+    width: 100%;
+    height: 100%;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+    color: rgb(162,163,166);
+color: linear-gradient(104deg, rgba(162,163,166,1) 5%, rgba(132,136,138,1) 44%, rgba(61,62,62,1) 100%, rgba(255,255,255,1) 100%);
+    font-family:HighVoltage Heavy Rough ;
+  }
+
+
+  .formulaire{
+background: rgb(28,23,125);
+background: linear-gradient(77deg , rgba(28,23,125,1) 0%, rgba(164,1,1,1) 55%, rgba(75,146,147,1) 100% );
+opacity: 90%;
+
+display: flex;
+width: 17%;
+height: 30%;
+border:2px solid grey;
+
+  }
+
+
+.ajtfilm{
+display: flex;
+}
+
+
+
+h1{
+    color: rgb(162,163,166);
+    background: rgb(28,23,125);
+background: linear-gradient(77deg , rgba(28,23,125,1) 0%, rgba(164,1,1,1) 55%, rgba(75,146,147,1) 100% );
+opacity: 90%;
+    color: linear-gradient(104deg, rgba(162,163,166,1) 5%, rgba(132,136,138,1) 44%, rgba(61,62,62,1) 100%, rgba(255,255,255,1) 100%);
+        font-family:HighVoltage Heavy Rough ;
+
+}
+
+.formulaire {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  label, input, select, textarea {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  button.ajtfilm {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button.ajtfilm:hover {
+    background-color: #45a049;
+border-radius: 99px;
+transition: ease-in-out 1s;
+  }
+  
+  #film-details {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    display: flex;
+  }
+  
+  #film-details > div {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: rgb(28,23,125);
+    background: linear-gradient(77deg, rgb(125, 23, 23) 0%, rgb(1, 31, 164) 55%, rgba(75,146,147,1) 100%);
+    color: white;
+    border-radius: 10px;
+margin: 10px;
+  }
+  
+
+
+  #film-details > div {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+  }
+  
+  .aventure {
+    border: 2px solid green;
+  }
+  
+  .comédie {
+    border: 2px solid blue;
+  }
+  
+  .horreur {
+    border: 2px solid red;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .input-red {
+    border: 2px solid red;
+  }
+  
+  .input-green {
+    border: 2px solid green;
+  }
+
+
+  
+
+
+
+
+
+.titres{
+    background: rgb(28,23,125);
+    background: linear-gradient(77deg , rgba(28,23,125,1) 0%, rgba(164,1,1,1) 55%, rgba(75,146,147,1) 100% );
+    opacity: 97%;
+    border: 3px solid grey;
+    width: 360px;
+}
+
+
+.arrow{
+width: 90px;
+height: 50px;
+rotate:calc(180deg);
+}

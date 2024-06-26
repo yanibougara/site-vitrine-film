@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="page2.css">
+  <title>Poste un film</title>
+</head>
+<body>
+  <h1 class="titres">Ajouter un nouveau film</h1>
+  <div class="formulaire">
+    <form>
+      <label class="nomdufilm"for="nom-film">Nom du film :</label>
+      <input type="text" id="nom-film" required>
+      <label for="nom-cinema">Nom du cinéma :</label>
+      <input type="text" id="nom-cinema" required>
+      <label for="categorie">Catégorie :</label>
+      <select id="categorie" required>
+        <option value="aventure">Aventure</option>
+        <option value="comédie">Comédie</option>
+        <option value="horreur">Horreur</option>
+      </select>
+      <label for="date-heure">Date et heure de diffusion :</label>
+      <input type="datetime-local" id="date-heure" required>
+      <label for="critique">Critique :</label>
+      <textarea id="critique" rows="4" required></textarea>
+      <button class="ajtfilm" type="button" onclick="ajouterFilm()">Ajouter le film</button>
+    </form>
+  </div>
+  
+  
+  <div class="fichefilm" id="film-details"></div>
+  <a href="index.html">
+    <img src="affiche/fleche/fleche.png" class="arrow" alt="Flèche" />
+  </a>
+  <script src="script.js"></script>
+</body>
+</html>

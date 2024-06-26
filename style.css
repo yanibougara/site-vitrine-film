@@ -1,0 +1,704 @@
+@font-face {
+    font-family: "HighVoltage Heavy Rough";
+    src: url("/font/HighVoltageHeavyRough.ttf") format("truetype");
+}
+
+body {
+    background: rgb(28, 23, 125);
+    background: linear-gradient(
+        77deg,
+        rgba(28, 23, 125, 1) 0%,
+        rgba(164, 1, 1, 1) 55%,
+        rgba(75, 146, 147, 1) 100%
+    );
+    width: 100%;
+    height: 100%;
+}
+
+.titre {
+    color: white;
+    font-family: HighVoltage Heavy Rough;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0%;
+}
+
+.titre {
+    color: rgb(141, 216, 244);
+    animation: colorChange 2s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        color: rgb(227, 181, 164);
+    }
+    50% {
+        color: rgb(136, 136, 238);
+    }
+    100% {
+        color: rgb(148, 241, 148);
+    }
+}
+
+.soutitre {
+    color: white;
+    margin-top: -130px;
+    display: flex;
+    align-items: center;
+}
+
+.boxfilm {
+    width: 156px;
+    height: 200px;
+    border: 2px solid grey;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.listfilm1 {
+    width: 520px;
+    height: 237px;
+    border: 2px solid grey;
+    margin-left: 31%;
+    display: flex;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(
+        90deg,
+        rgba(131, 58, 180, 1) 0%,
+        rgba(253, 29, 29, 0.4276304271708683) 100%,
+        rgba(252, 176, 69, 1) 100%
+    );
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.listfilm2 {
+    width: 520px;
+    height: 237px;
+    border: 2px solid #0f2fae;
+    margin-left: 31%;
+    display: flex;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(
+        90deg,
+        rgba(131, 58, 180, 1) 0%,
+        rgba(253, 29, 29, 0.4276304271708683) 100%,
+        rgba(252, 176, 69, 1) 100%
+    );
+    margin-top: 10px;
+    padding: 20px;
+}
+.listfilm3 {
+    width: 520px;
+    height: 237px;
+    border: 2px solid #ecbf37;
+    margin-left: 31%;
+    display: flex;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(
+        90deg,
+        rgba(131, 58, 180, 1) 0%,
+        rgba(253, 29, 29, 0.4276304271708683) 100%,
+        rgba(252, 176, 69, 1) 100%
+    );
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.listfilm1 img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.listfilm1 :hover img {
+    -webkit-transform: scale(1);
+    transform: scale(1.1);
+}
+
+.listfilm2 img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.listfilm2 :hover img {
+    -webkit-transform: scale(1);
+    transform: scale(1.1);
+}
+.listfilm3 img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.listfilm3 :hover img {
+    -webkit-transform: scale(1);
+    transform: scale(1.1);
+}
+
+.sidenav {
+    border: 2px solid grey;
+    width: 22%;
+    height: 103%;
+    display: flex;
+    position: absolute;
+    background: rgb(131, 58, 180);
+    background: rgb(131, 58, 180);
+    background: linear-gradient(
+        90deg,
+        rgba(131, 58, 180, 1) 0%,
+        rgba(253, 29, 29, 0.4276304271708683) 100%,
+        rgba(252, 176, 69, 1) 100%
+    );
+}
+
+.listmenu {
+    width: 106px;
+    height: 800px;
+    display: flex;
+    margin-left: 18%;
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+.listmenu h1 {
+    font-family: HighVoltage Heavy Rough;
+    color: rgb(122, 120, 124);
+    border: 0px solid;
+    margin: 10px;
+    width: 246px;
+}
+
+.listmenu h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(157, 156, 158);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    padding-left: 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+.listmenu h1:hover {
+    padding-left: 32px;
+    border-left: 5px solid #a6a4a2;
+    transition: 1s;
+}
+
+.listmenu h1 {
+    color: rgb(141, 216, 244);
+    animation: lol 1s infinite;
+}
+
+@keyframes lol {
+    0% {
+        color: rgb(124, 123, 123);
+    }
+    50% {
+        color: rgb(102, 100, 102);
+    }
+    100% {
+        color: rgb(103, 105, 103);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .listfilm1 {
+        margin-left: 165px;
+        display: flex;
+        flex-direction: column;
+        width: 180px;
+        height: 700px;
+    }
+
+    .listfilm2 {
+        margin-left: 165px;
+        display: flex;
+        flex-direction: column;
+        width: 180px;
+        height: 700px;
+    }
+
+    .listfilm3 {
+        margin-left: 165px;
+        display: flex;
+        flex-direction: column;
+        width: 180px;
+        height: 700px;
+    }
+
+    .listfilm1 :hover img {
+        -webkit-transform: scale(1);
+        transform: scale(1.1);
+    }
+
+    .listfilm2 :hover img {
+        -webkit-transform: scale(1);
+        transform: scale(1.1);
+    }
+
+    .listfilm3 :hover img {
+        -webkit-transform: scale(1);
+        transform: scale(1.1);
+    }
+
+    .sidenav {
+        width: 39%;
+        height: 80%;
+    }
+
+    .listmenu h2 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(157, 156, 158);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        padding: 16px;
+        padding-left: 16px;
+        padding-left: 16px;
+        transition: all 0.2s ease-in-out;
+        margin-left: -38px;
+    }
+    .titre {
+        font-family: HighVoltage Heavy Rough;
+        font-size: 75px;
+        display: flex;
+        justify-content: center;
+        margin-top: 0%;
+    }
+
+    .soutitre {
+        color: white;
+        margin-left: 20%;
+        margin-top: -101px;
+    }
+}
+
+p {
+    display: flex;
+    margin-top: 3px;
+    align-items: center;
+    color: #c6c1c1;
+    justify-content: center;
+}
+
+.SmileHorreur {
+    width: 156px;
+    height: 200px;
+    border: 1px solid grey;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.JungleHorreur {
+    width: 156px;
+    height: 200px;
+    border: 1px solid grey;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.ConjuringHorreur {
+    width: 156px;
+    height: 200px;
+    border: 1px solid grey;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.FastandFuriousAventure {
+    width: 156px;
+    height: 200px;
+    border: 1px solid grey;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.AvatarAventure {
+    width: 156px;
+    height: 200px;
+    border: 1px solid grey;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.DixJoursSansMamanComedie {
+    width: 156px;
+    height: 200px;
+    border: 1px solid grey;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.CetEteLaComedie {
+    width: 156px;
+    height: 200px;
+    border: 1px solid grey;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.JumeauxComedie {
+    width: 156px;
+    height: 200px;
+    border: 1px solid grey;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.MissionImpossibleAventure {
+    width: 156px;
+    height: 200px;
+    border: 1px solid grey;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.boxfilm .film-overlay {
+    position: absolute;
+    top: 181px;
+    left: 0px;
+    width: 11%;
+    height: 25%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 347px;
+}
+
+.boxfilm:hover .film-overlay {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.film-text {
+    color: white;
+    font-size: 24px;
+    display: flex;
+    width: 20px;
+    font-size: 17px;
+}
+
+.boxfilm .film-overlay1 {
+    position: absolute;
+    top: 170px;
+    left: 0px;
+    width: 12%;
+    height: 28%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 513px;
+}
+
+.boxfilm:hover .film-overlay1 {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.film-text1 {
+    color: white;
+    font-size: 24px;
+    display: flex;
+    width: 20px;
+    font-size: 17px;
+}
+
+.boxfilm .film-overlay2 {
+    position: absolute;
+    top: 170px;
+    left: 0px;
+    width: 12%;
+    height: 35%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 680px;
+}
+
+.boxfilm:hover .film-overlay2 {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.film-text2 {
+    color: white;
+    font-size: 24px;
+    display: flex;
+    width: 20px;
+    font-size: 17px;
+}
+
+.boxfilm .film-overlay3 {
+    position: absolute;
+    top: 420px;
+    left: -3px;
+    width: 12%;
+    height: 28.1%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 347px;
+}
+
+.boxfilm:hover .film-overlay3 {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.film-text3 {
+    color: white;
+    font-size: 24px;
+    display: flex;
+    width: 25px;
+    font-size: 17px;
+}
+
+.boxfilm .film-overlay4 {
+    position: absolute;
+    top: 420px;
+    left: -3px;
+    width: 12%;
+    height: 28.1%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 513px;
+}
+
+.boxfilm:hover .film-overlay4 {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.film-text4 {
+    color: white;
+    font-size: 24px;
+    display: flex;
+    width: 25px;
+    font-size: 17px;
+}
+
+.boxfilm .film-overlay5 {
+    position: absolute;
+    top: 420px;
+    left: 0px;
+    width: 12%;
+    height: 28%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 680px;
+}
+
+.boxfilm:hover .film-overlay5 {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.film-text5 {
+    color: white;
+    font-size: 24px;
+    display: flex;
+    width: 20px;
+    font-size: 17px;
+}
+
+.boxfilm .film-overlay6 {
+    position: absolute;
+    top: 670px;
+    left: 0px;
+    width: 12%;
+    height: 28%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 343px;
+}
+
+.boxfilm:hover .film-overlay6 {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.film-text6 {
+    color: white;
+    font-size: 24px;
+    display: flex;
+    width: 20px;
+    font-size: 17px;
+}
+
+.boxfilm .film-overlay7 {
+    position: absolute;
+    top: 670px;
+    left: 0px;
+    width: 12%;
+    height: 28%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 512px;
+}
+
+.boxfilm:hover .film-overlay7 {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.film-text7 {
+    color: white;
+    font-size: 24px;
+    display: flex;
+    width: 20px;
+    font-size: 17px;
+}
+
+.boxfilm .film-overlay8 {
+    position: absolute;
+    top: 670px;
+    left: 0px;
+    width: 12%;
+    height: 28%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 680px;
+}
+
+.boxfilm:hover .film-overlay8 {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.film-text8 {
+    color: white;
+    font-size: 24px;
+    display: flex;
+    width: 20px;
+    font-size: 17px;
+}
+
+
+.fleche {
+    width: auto;
+    height: 100px;
+    display: flex;
+    margin-left: auto;
+}
+
+.myCard {
+    background-color: transparent;
+    width: 190px;
+    height: 254px;
+    perspective: 1000px;
+}
+
+.title {
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+
+.innerCard {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    margin-top: 8%;
+}
+
+.myCard:hover .innerCard {
+    transform: rotateY(180deg);
+}
+
+.frontSide,
+.backSide {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+}
+
+.frontSide,
+.frontSide::before {
+    background: linear-gradient(
+        43deg,
+        rgb(65, 88, 208) 0%,
+        rgb(200, 80, 192) 46%,
+        rgb(255, 204, 112) 100%
+    );
+}
+
+.backSide,
+.backSide::before {
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.backSide {
+    transform: rotateY(180deg);
+}
+
+.frontSide::before,
+.backSide::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 1em;
+    filter: blur(20px);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0.3;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
